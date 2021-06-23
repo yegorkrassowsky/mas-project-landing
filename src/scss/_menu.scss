@@ -19,16 +19,19 @@
       font-size: 3rem;
     }
   }
+  & > .logo {
+    display: none;
+  }
+  .logo {
+    img {
+      display: block;
+    }
+  }
   .nav-menu-container {
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo {
-      img {
-        display: block;
-      }
-    }
     .nav-list {
       margin: 0;
       padding: 0;
@@ -66,8 +69,11 @@
   @media (max-width: v.$container-max-width) {
     padding: 15px 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    .logo {
+      display: block;
+    }
     .nav-toggle {
       &.nav-toggle-open,
       &.nav-toggle-close {
