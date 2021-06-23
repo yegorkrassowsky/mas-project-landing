@@ -1,0 +1,113 @@
+@use 'variables' as v;
+
+.nav-menu {
+  height: 62px;
+  position: relative;
+  .nav-toggle {
+    color: v.$link-color;
+    cursor: pointer;
+    transition: v.$link-transition;
+    &:hover {
+      color: v.$link-active-color;
+    }
+    &.nav-toggle-open {
+      display: none;
+      font-size: 2rem;
+    }
+    &.nav-toggle-close {
+      display: none;
+      font-size: 3rem;
+    }
+  }
+  .nav-menu-container {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        display: block;
+      }
+    }
+    .nav-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      .nav-item {
+        list-style: none;
+        margin: 0 25px;
+        text-align: center;
+        a {
+          font-family: 'sansationregular';
+          font-size: 1.8rem;
+          transition: v.$link-transition;
+          &:hover, &.active {
+            color: v.$link-active-color;
+          }
+        }
+      }
+      &.nav-list-social {
+        .nav-item {
+          margin: 0 5px;
+          a {
+            width: 30px;
+            height: 30px;
+            border: 1px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: v.$container-max-width) {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .nav-toggle {
+      &.nav-toggle-open,
+      &.nav-toggle-close {
+        display: block;
+      }
+    }
+    .nav-menu-container {
+      overflow-y: scroll;
+      padding: 20px;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      transform: translateY(-100%);
+      opacity: 0;
+      background: v.$default-bg-color;
+      transition: all .5s;
+      .logo {
+        margin: 30px 0;
+      }
+      .nav-list:not(.nav-list-social) {
+        flex-direction: column;
+        .nav-item {
+          margin: 10px;
+        }
+      }
+      .nav-list-social {
+        margin-top: 30px;
+        padding-bottom: 20px;
+      }
+    }
+    &.open {
+      .nav-menu-container {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+  }
+
+}
