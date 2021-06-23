@@ -35,4 +35,31 @@ a {
     font-family: 'sansationregular';
     font-size: 1.3rem;
   }
+  &.primary-btn {
+    border-radius: 3px;
+    background-color: v.$primary-bg-color;
+    font-family: 'neotericbold';
+    font-size: 1rem;
+    padding: 8px 32px;
+  }
+}
+
+.heading-secondary {
+  color: #252525;
+  font-family: 'sansationregular';
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding-bottom: 7px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65px;
+    height: 1px;
+    background-color: #252525;
+  }
 }

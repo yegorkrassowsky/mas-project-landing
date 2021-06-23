@@ -1,0 +1,56 @@
+@use 'variables' as v;
+
+.section-about {
+  background: #fff;
+  .cols {
+    display: flex;
+    align-items: center;
+    .col {
+      width: 50%;
+    }
+    .col-img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .col-text {
+      padding: 45px;
+      padding-right: 65px;
+      .heading-secondary {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      p {
+        font-family: 'myriadproregular';
+        font-size: 1.3rem;
+        margin: 20px 0;
+        color: #000;
+        line-height: 1.3;
+      }
+      .btn {
+        margin-top: 20px;
+        
+      }
+    }
+  }
+  @media (max-width: 920px) {
+    .cols {
+      .col-img {
+        padding: 45px;
+        padding-left: 65px;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    .cols {
+      flex-flow: column-reverse;
+      .col {
+        width: 100%;
+      }
+      .col-img {
+        padding: 0;
+      }
+    }
+  }
+}

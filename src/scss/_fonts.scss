@@ -15,3 +15,35 @@
   font-style: normal;
 
 }
+
+@font-face {
+  font-family: 'myriadproregular';
+  src: url('fonts/myriadpro_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'myriadprosemibold';
+  src: url('fonts/myriadpro_semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'neotericbold';
+  src: url('fonts/neotericbold-xq1q-webfont.woff2') format('woff2'),
+       url('fonts/neotericbold-xq1q-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neotericregular';
+  src: url('fonts/neoteric-32a8-webfont.woff2') format('woff2'),
+       url('fonts/neoteric-32a8-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
