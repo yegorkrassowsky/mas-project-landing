@@ -47,3 +47,25 @@
   font-style: normal;
 
 }
+
+@font-face {
+	font-family: 'Helvetica LT Std';
+	src: url('fonts/HelveticaLTStd-LightCond.eot');
+	src: local('Helvetica LT Std Light Condensed'), local('HelveticaLTStd-LightCond'),
+		url('fonts/HelveticaLTStd-LightCond.eot?#iefix') format('embedded-opentype'),
+		url('fonts/HelveticaLTStd-LightCond.woff') format('woff'),
+		url('fonts/HelveticaLTStd-LightCond.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica LT Std';
+	src: url('fonts/HelveticaLTStd-Bold.eot');
+	src: local('Helvetica LT Std Bold'), local('HelveticaLTStd-Bold'),
+		url('fonts/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/HelveticaLTStd-Bold.woff') format('woff'),
+		url('fonts/HelveticaLTStd-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

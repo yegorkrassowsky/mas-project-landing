@@ -36,6 +36,7 @@
     margin-top: 40px;
     max-width: 510px;
     display: flex;
+    justify-content: flex-end;
     flex-grow: 1;
     & :first-child {
       border-top-left-radius: v.$form-radius;

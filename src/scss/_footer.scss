@@ -1,0 +1,112 @@
+@use 'variables' as v;
+
+footer {
+  background-color: v.$default-bg-color;
+  padding: 30px 40px;
+  a:hover {
+    color: v.$link-active-color;
+    transition: v.$link-transition;
+  }
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 770px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .nav-menu-footer {
+    display: flex;
+    flex-grow: 1;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+    .nav-menu-container {
+      h3 {
+        color: #e5e5e5;
+        text-transform: uppercase;
+        position: relative;
+        font-family: 'Helvetica LT Std';
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 0;
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 30px;
+          height: 1px;
+          background-color: #e5e5e5;
+        }
+      }
+      .nav-list {
+        font-family: 'Helvetica LT Std';
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-top: 18px;
+        .nav-item {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+  .subscribe-container {
+    width: 260px;
+    margin-top: 10px;
+    @media (max-width: 770px) {
+      margin-top: 40px;
+    }
+    .subscribe-form {
+      display: flex;
+      border: 1px solid #cccccc;
+      input {
+        max-width: 200px;
+        height: 44px;
+        color: #000;
+        font-family: 'Helvetica LT Std';
+        font-weight: 300;
+        font-size: 1.3rem;
+        padding: 10px 14px;
+        padding-top: 13px;
+        background-color: #cccccc;
+        flex-grow: 1;
+        outline: none;
+        box-shadow: none;
+        min-width: 0;
+        width: 100%;
+        border: none;
+        &::placeholder {
+          color: #000000
+        }
+      }
+      .btn {
+        flex-shrink: 0;
+        height: 44px;
+      }
+    }
+    .nav-list-social {
+      margin-top: 43px;
+      display: flex;
+      justify-content: space-between;
+      .nav-item {
+        a {
+          width: 37px;
+          height: 37px;
+          border-radius: 50%;
+          background-color: #2e2e2e;
+          color: #b3b2b2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: v.$link-transition;
+          &:hover {
+            color: v.$link-active-color;
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -66,6 +66,17 @@ a {
     font-size: 1.2rem;
     background-color: #fff;
   }
+  &.subscribe-btn {
+    padding: 10px 26px;
+    padding-top: 15px;
+    text-transform: none;
+    height: 45px;
+    color: #fff;
+    font-family: 'Helvetica LT Std';
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: #0072bc;
+  }
 }
 
 .heading-primary {
