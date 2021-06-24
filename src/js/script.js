@@ -65,10 +65,12 @@ $(function() {
   });
 
   $('.nav-toggle-open').on('click', function(){
-    $(this).parents('.nav-menu').addClass('open')
+    $(this).parents('.nav-menu').addClass('open');
+    $('body').addClass('lock');
   });
   $('.nav-toggle-close').on('click', function(){
     $(this).parents('.nav-menu').removeClass('open')
+    $('body').removeClass('lock');
   });
 })
 
