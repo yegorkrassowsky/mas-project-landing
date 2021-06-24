@@ -1,0 +1,60 @@
+@use 'variables' as v;
+
+.section-services {
+  background-color: #3d3d3d;
+  .heading-container {
+    background: #373737;
+    padding: 45px 40px;
+    .heading-primary {
+      margin: 0;
+    }
+  }
+  .service-card {
+    background-color: #3d3d3d;
+    transition: background-color .3s;
+    padding: 140px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .card-title {
+      color: #f7f7f7;
+      font-family: 'sansationbold';
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 50px;
+      margin-bottom: 14px;
+      font-size: 2.4rem;
+    }
+    .card-text {
+      color: #f7f7f7;
+      margin-top: 0;
+      margin-bottom: 28px;
+      font-family: 'sansationregular';
+      font-size: 1.4rem;
+    }
+  }
+  .splide {
+    .splide__slide.is-active {
+      .service-card {
+        background-color: v.$link-active-color;
+      }
+    }
+    .splide__arrow {
+      top: auto;
+      left: auto;
+      bottom: 0;
+      right: 0;
+      width: 33px;
+      height: 30px;
+      transform: none;
+      background: v.$primary-bg-color;
+      border-radius: 0;
+      &.splide__arrow--prev {
+        right: 1px;
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
