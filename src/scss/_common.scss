@@ -30,6 +30,8 @@ a {
   line-height: 100%;
   color: #fff;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
   &.border-btn {
     border: 2px solid;
     font-family: 'sansationregular';
@@ -49,6 +51,16 @@ a {
     color: #f7f7f7;
     background: #959595;
     padding: 8px 28px;
+  }
+  &.call-btn {
+    padding: 10px 26px;
+    text-transform: none;
+    height: 45px;
+    color: v.$link-active-color;
+    font-family: 'myriadprosemibold';
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #fff;
   }
 }
 
