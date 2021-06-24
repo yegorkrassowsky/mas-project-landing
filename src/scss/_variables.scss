@@ -1,7 +1,9 @@
 $container-max-width: 1000px;
 
+$active-color: #097e89;
+
 $link-color: #fff;
-$link-active-color: #097e89;
+$link-active-color: $active-color;
 $link-transition: color .5s;
 
 $default-bg-color: #474747;
