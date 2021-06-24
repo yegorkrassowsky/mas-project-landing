@@ -4,7 +4,6 @@
   background: #fff;
   .cols {
     display: flex;
-    align-items: center;
     .col {
       width: 50%;
     }
@@ -36,6 +35,7 @@
   }
   @media (max-width: 920px) {
     .cols {
+      align-items: center;
       .col-img {
         padding: 45px;
         padding-left: 65px;
