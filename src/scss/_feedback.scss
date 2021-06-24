@@ -1,0 +1,110 @@
+.section-feedback {
+  background-color: #3d3d3d;
+  .heading-container {
+    background: #373737;
+    padding: 45px 40px;
+    .heading-primary {
+      margin: 0;
+    }
+  }
+  .splide-container {
+    padding: 25px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .splide-controls {
+      padding: 0 40px;
+      width: 310px;
+      flex-shrink: 0;
+      @media (max-width: 1000px) {
+        margin-bottom: 40px;
+      }
+      .splide-arrows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          cursor: pointer;
+          width: 33px;
+          height: 30px;
+          border: none;
+          padding: 0;
+          opacity: .7;
+          background: transparent;
+          &:hover {
+            opacity: 1;
+          }
+          .chevron:before {
+            color: #999999;
+          }
+        }
+        .splide-count {
+          color: #cdc8c8;
+          font-family: 'sansationregular';
+          font-weight: 400;    
+          font-size: 1.4rem;
+        }
+
+      }
+      .splide-text {
+        margin-top: 40px;
+        margin-bottom: 35px;
+        font-family: 'sansationregular';
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: #cdc8c8;
+        padding-bottom: 20px;
+        position: relative;
+        text-align: center;
+        line-height: 1.5;
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 62px;
+          height: 2px;
+          background-color: #cdc8c8;
+        }
+      }
+    }
+    .splide-wrapper {
+      max-width: 650px;
+      width: 100%;
+      .splide__slide {
+        padding: 0 10px;
+      }
+    }
+  }
+  .feedback-card {
+    margin: 0 auto;
+    width: 202px;
+    height: 223px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #272727;
+    font-family: 'sansationregular';
+    font-weight: 400;
+    padding: 9px;
+    display: flex;
+    align-items: flex-end;
+    .card-number {
+      background-color: #fff;
+      font-size: 1rem;
+      width: 43px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    .card-text {
+      background-color: #fff;
+      font-size: 1.2rem;
+      flex-grow: 1;
+      margin-left: 5px;
+      height: 30px;
+      padding: 1px 4px;
+    }
+  }
+}
