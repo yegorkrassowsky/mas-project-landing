@@ -78,7 +78,12 @@ header {
           height: 1px;
           background-color: rgba(255, 255, 255, 0.2);
         }
-
+        @media (max-width: 600px) {
+          &:before,
+          &:after {
+            width: 25%;
+          }
+        }
       }
     }
   }
