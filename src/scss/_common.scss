@@ -92,6 +92,17 @@ a {
       }
     }
   }
+  &.inverted {
+    font-family: 'sansationbold';
+    color: #656464;
+    .detail {
+      background-color: #656464;
+      &:before {
+        background-color: #656464;
+      }
+    }
+  }
+
 }
 
 .heading-secondary {
