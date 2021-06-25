@@ -9,6 +9,7 @@ html {
     .root {
       opacity: 1;
       transition: opacity .5s;
+      position: relative;
     }
     &.lock,
     &.loading {
